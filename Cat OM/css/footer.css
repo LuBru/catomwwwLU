@@ -1,0 +1,46 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+footer#creditos{
+    width: 100%;
+    background:url("../img/grass-4642078_1280.png");
+    padding: 100px;
+
+}
+.container-footer-all{
+    width: 100%;
+    max-width: 1600px;
+    margin: auto;
+}
+.container-body{
+    display: flex;
+    justify-content: center;
+}
+.column1{
+    max-width: 500px;
+}
+.column1 h1{
+    font-size: 22px;
+}
+.column1 p{
+    font-size: 14px;
+    color: black;
+    margin-top: 20px;
+}
+.column2{
+    max-width: auto; /*ARREGLO*/
+}
+.colum2 .row{
+    margin-top: 100px;
+    display: flex;
+}
+.column2 .row img{
+    width: 120px;
+    height: 120px;
+}
+.container-footer{
+    width: 100%;
+}
