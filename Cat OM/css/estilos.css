@@ -1,168 +1,151 @@
-*{ /*OK*/
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
+body {
+    background: url(../img/bggrass.png) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  width: 100%;
+  max-width: 100%;
 }
-body{ /*OK*//*OK*/
-    position: absolute;
+
+#body-contact {
+    background: url(../img/cat_and_seagull-1280.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  width: 100%;
+  max-width: 100%;
+}
+
+#title-intro {
+    margin: 1em;
+}
+
+#section {
+    background-color: rgba(255, 235, 205, 0.842);
+    margin-top: 3em;
+    padding: 1em;
+}
+
+.btnstore {
+    margin: 0.25em;
+}
+
+.card h3 {
+  padding-top: 23px;
+}
+
+#enviado {
+    color: rgb(78, 255, 78);
+}
+
+#footer {
+    margin: 1em;
+    background-color: black;
+    color: white;
+
+}
+
+#portada-producto {
+  height: 200px;
+  max-height: 200px;
+}
+
+#footer a {
+    color: #fff;
+    margin-top: 0.25em;
+    padding-top: 0.25em;
+}
+
+#footer p {
+    color: #fff;
+    margin-top: 0.25em;
+    padding-top: 0.25em;
+    vertical-align: middle;
+}
+
+.tituloproducto {
+    margin-top: 30px;
+}
+  
+  
+  .sidebar-navigation {
+    display: inline-block;
     min-height: 100vh;
-    width: 100%;
-    /*overflow: hidden; PARA SIDEBAR SOLO*/
-}
-.sidebar{ /*OK*/ /*OK*/
+    width: 80px;
+    height: 100%;
     position: fixed;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 78px;
-    background-image: url("../img/colorful-rainbow.jpg");
-    padding: 6px 14px;
-    transition: all 0.5s ease;
-}
-.sidebar.active{ /*OK*//*OK*/
-    width: 240px;
-}
-.sidebar .logo_content .logo{ /*OK*//*OK*/
-    color: black;
-    display: flex;
-    height: 50px;
-    width: 100%;
-    align-items: center;
-    opacity: 0;
-    pointer-events: none;
-    transition: all 0.5s ease;
-}
-.sidebar.active .logo_content .logo{ /*OK*//*OK*/
-    opacity: 1;
-}
-.logo_content .logo i{ /*OK*/
-    font-size: 28px;
-    margin-right: 5px;
-}
-.logo_content .logo .logo_name{ /*OK*/
-    font-size: 20px;
-    font-weight: 500;
-}
-.sidebar #btn{ /*OK*//*OK*/
-    position: absolute;
-    color: black;
-    top: 6px;
-    left: 50%;
-    font-size: 40px;
-    height: 50px;
-    width: 50px;
+    text-decoration: none;
+    background-image: linear-gradient(to right, #ed44b2, #ff5188, #ff7a5d, #ffaa39, #fbd830);
+  }
+  .sidebar-navigation ul {
     text-align: center;
-    line-height: 50px;
-    transform: translateX(-50%);
-}
-.sidebar.active #btn{ /*OK*//*OK*/
-    left: 90%;
-}
-.sidebar ul{ /*OK*/
-    margin-top: 20px;
-    /*list-style: none; 
-    margin: 0;
-    padding: 0;  
-    position: absolute;*/
-}
-.sidebar ul li{ /*OK*/
-    position: relative;
-    height: 50px;
-    width: 100%;
-    margin: 0 5px;
+    color: white;
     list-style: none;
-    line-height: 50px;
-    border-radius: 12px;
-}
-.sidebar ul li input{ /*OK*//*OK*/
+  }
+  .sidebar-navigation ul li {
+    padding: 28px 0;
+    cursor: pointer;
+    transition: all ease-out 120ms;
+  }
+  .sidebar-navigation ul li i {
+    display: block;
+    font-size: 24px;
+    transition: all ease 450ms;
+  }
+  .sidebar-navigation ul li .tooltip {
+    display: inline-block;
     position: absolute;
-    height: 100%;
-    width: 100%;
-    left: 0;
-    top: 0;
-    border-radius: 12px;
-    outline: none;
-    border: none;
-    background: #1d1b31;
-    padding-left: 50px;
-    font-size: 18px;
-    color: black;
-}
-.sidebar ul li a{ /*OK*//*OK*/
-    color: black;
-    display: flex;
-    align-items: center;
-    text-decoration: none; 
-    transition: all 0.4s ease;
-    border-radius: 12px;
-    white-space: nowrap;
-}
-.sidebar ul li a:hover{ /*OK*//*OK*/
-    color: #11101d;
-    background: #fff;
-}
-.sidebar ul li a li{ /*NUEVO VIDEO*/
-    height: 50px;
-    min-height: 50px;
-    border-radius: 12px;
-    line-height: 50px;
-    text-align: center;
-}
-.sidebar ul li i{ /*OK*//*OK*/
-    height: 50px;
-    min-width: 50px;
-    border-radius: 12px;
-    line-height: 50px;
-    text-align: center;
-}
-.sidebar .links_name{  /*OK*//*OK*/ /*ACA PR*/
+    background-color: #313443;
+    padding: 8px 15px;
+    border-radius: 3px;
+    margin-top: -26px;
+    left: 90px;
     opacity: 0;
-    pointer-events: none; 
-    transition: all 0.5s ease;
-}
-.sidebar.active .links_name{ /*OK*//*OK*/ /*ACA PR*/
-    opacity: 1;
-    pointer-events: auto;
-}
-
-ol, /*ANULA LA LINEA DE BOOSTRAP*/
-ul {
-  padding-left: unset;
-}
-
-.carousel-caption{ /*ANULA LA LINEA DE BOOSTRAP*/
-	color: unset;
-}
-.carousel-item .carousel-caption h5{
-	color: black;
-    font-weight: bold;
-    text-shadow: blanchedalmond 2px 2px 2px; /*HACE SOMBRA*/
-}
-.carousel-item .carousel-caption p{
-	color: black;
-    font-weight: bold;
-    font-style: italic;
-    text-shadow: blanchedalmond 2px 2px 2px; /*HACE SOMBRA*/
-}
-
-.home_content{ /*OK*//*OK*/
+    visibility: hidden;
+    font-size: 13px;
+    letter-spacing: 0.5px;
+  }
+  .sidebar-navigation ul li .tooltip:before {
+    content: "";
+    display: block;
     position: absolute;
-    height: 100%;
-    width: calc(100% - 78px);
-    left: 78px;
-    transition: all 0.5s ease;
-}
-.home_content .text{ /*OK*//*OK*/
-    font-size: 30px;
-    font-weight: 500;
-    color: black;
-    margin: 12px;
-    text-align: center;
-    text-shadow: -5px 5px #b0d8fd, 5px -5px pink, yellow 1px 1px;
+    left: -4px;
+    top: 10px;
+    transform: rotate(45deg);
+    width: 10px;
+    height: 10px;
+    background-color: inherit;
+  }
+  .sidebar-navigation ul li:hover {
+    background-image: linear-gradient(to right, #ff00a6, #ff3377, #ff6d4a, #ffa21c, #fbd000);
+  }
+  .sidebar-navigation ul li:hover .tooltip {
+    visibility: visible;
+    opacity: 1;
+  }
 
-}
-.sidebar.active ~ .home_content{ /*OK*//*OK*/
-    width: calc(100% - 240px);
-    left: 240px;
-}
+  .sidebar-navigation ul li {
+    margin-left: -32px;
+  }
+
+  .sidebar-navigation ul li a {
+    text-decoration: none;
+    color: #fff;
+  }
+
+  .sidebar-navigation ul li.active {
+    background-image: linear-gradient(to right, #ff00a6, #ff3377, #ff6d4a, #ffa21c, #fbd000);
+  }
+  .sidebar-navigation ul li.active i {
+    color: #ffffff;
+  }
+
+ .card {
+    vertical-align: middle;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 200px;
+  }
+
