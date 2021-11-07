@@ -1,25 +1,51 @@
 <!DOCTYPE html>
-<html lang="es">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximun-scale=1, minimun-scale=1">
-        <meta name="author" content="Lucrecia Bravo">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-        <link rel="stylesheet" href="css/login.css">
+    <link rel="icon" type="image/png" href="img/catwhitefavicon.png" />
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/estilos.css">
+    <link rel="stylesheet" href="./css/font-awesome.min.css">
+    <title>CAT OM</title>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 text-center" id="login-container">
+                <div class="card" style="width: 18rem;">
+                    <h3>Cat ◉M</h3>
+                    <div class="card-body">
+                        <form action="panel.html">
+                            <div class="mb-2">
+                              <label class="form-label">Usuario</label>
+                              <input type="text" class="form-control" placeholder="Ingrese su usuario">
+                            </div>
+                            <div class="mb-2">
+                                <label class="form-label">Contraseña</label>
+                                <input type="password" class="form-control" placeholder="Ingrese su contraseña">
+                              </div>
+                              
+                            <button type="submit" class="btn btn-primary">Ingresar</button>
+                            <p></p>
+                            <p><strong><i class="fa fa-user" aria-hidden="true"></i> Usuario:</strong> admin</p>
+                            <p><strong><i class="fa fa-eye-slash" aria-hidden="true"></i> Contraseña:</strong> admin</p>
+                          </form>
+                            <div align="center">
+                                <a href="index.html">
+                                    <img src="./img/favicon_cat-compu.png" width="50px" alt="">
+                                </a>
+                            </div>
+                    </div>
+                  </div>
+            </div>
+        </div>
+    </div>
 
-        <link rel="icon" type="image/png" href="img/catwhitefavicon.png" />
-
-        <title>Login Cat OM</title>
-    </head>
-    <body>
-        <section class="form-login">
-            <a href="index.html"><img src="img/cat_index.png" alt="Inicio Cat OM"></a>
-            <h5>Bienvenido/a al Mundo CAT OM</h5>
-            <input class="controls" type="text" name="" value placeholder="Usuario">
-            <input class="controls" type="password" name="" value placeholder="Contraseña">
-            <input class="buttons" type="submit" name="" value="Ingresar">
-            <p><a href="#">¿Olvidaste tu contraseña?</a></p>
-        </section>
-
-    </body>
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="./js/main.js"></script>
+</body>
 </html>
