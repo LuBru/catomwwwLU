@@ -1,73 +1,241 @@
-<!doctype html>
-<html lang="es">
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="author" content="Lucrecia Bravo">
-
-    <title>Productos por categorias</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="icon" type="image/png" href="img/catwhitefavicon.png" />
-    
-    <link rel="stylesheet" href="libs/icopandaom-v1.0/style.css">
-
-    <link rel="stylesheet" href="css/footer.css">
-    <link rel="stylesheet" href="css/productos.css">
-    
-    <script src="js/jquery-3.6.0.js"></script>
-    <script src="js/script.js"></script>
-
-    <title>Cat OM</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/estilos.css">
+    <link rel="stylesheet" href="./css/font-awesome.min.css">
+    <title>CAT OM</title>
 </head>
-
 <body>
-    <div class="sidebar">
-        <div class="logo_content">
-            <div class="logo">
-                <div class="logo_name">Cat OM</div>
-            </div>
-            <i class="ico-cat-toy" id="btn"></i>
+    <!--Comienza el menu-->
+  <nav class="sidebar-navigation">
+    <ul>
+      <li class="active">
+        <a href="index.html">
+          <i class="fa fa-home"></i>
+          <span class="tooltip">Home</span>
+        </a>
+      </li>
+      <li>
+        <a href="productos.html">
+          <i class="fa fa-shopping-bag"></i>
+          <span class="tooltip">Productos</span>
+        </a>
+      </li>
+      <li>
+        <a href="contacto.html">
+          <i class="fa fa-envelope"></i>
+          <span class="tooltip">Contacto</span>
+        </a>
+      </li>
+      <li>
+        <a href="login.html">
+          <i class="fa fa-user-circle-o"></i>
+          <span class="tooltip">Login</span>
+        </a>
+      </li>
+    </ul>
+  </nav>
+    <!--Termina el menu-->
+
+    <!--Empieza la imagen de portada-->
+    <div class="container-fluid text-center" id="portada">
+        <div class="row">
+            <div class="col-md-12"></div>
         </div>
-        <ul class="nav_list">
-            <li>
-                <a href="quienesomos.html">
-                    <i class="ico-equipopanda"></i>
-                    <span class="links_name">Quienes Somos</span>
-                </a>
-            </li>
-            <li>
-                <a href="productos.html">
-                    <i class="ico-box-products"></i>
-                    <span class="links_name">Productos</span>
-                </a>
-            </li>
-            <li>
-                <a href="contactanos.html">
-                    <i class="ico-email-nube"></i>
-                    <span class="links_name">Contacto</span>
-                </a>
-            </li>
-            <li>
-                <a href="login.html">
-                    <i class="ico-heart-person"></i>
-                    <span class="links_name">Perfil Panda</span>
-                </a>
-            </li>
-            <li>
-                <a href="index.html">
-                    <i class="ico-menucasahoja"></i>
-                    <span class="links_name">Inicio</span>
-                </a>
-            </li>
-        </ul>
+    </div>
+
+    <!--Comienza el contenido del sitioweb-->
+    <div class="container" id="section">
+        <h2><i class="fa fa-star"></i> Productos destacados</h2>
+        <hr>
+        <div class="row">
+            <div class="col-md-4">
+                <img src="./img/fuentedeaguaredonda.jpg" alt="">
+                <ul class="nav">
+                  <li class="nav-item">
+                    <a class="nav-link" href="#"><i class="fa fa-star fa-2x" style="color: rgb(255, 0, 0);" aria-hidden="true"></i></a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#"><i class="fa fa-star fa-2x" style="color: rgb(255, 0, 0);" aria-hidden="true"></i></a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#"><i class="fa fa-star fa-2x" style="color: rgb(255, 0, 0);" aria-hidden="true"></i></a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#"><i class="fa fa-star fa-2x" style="color: rgb(255, 0, 0);" aria-hidden="true"></i></a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#"><i class="fa fa-star fa-2x" style="color: rgb(255, 0, 0);" aria-hidden="true"></i></a>
+                  </li>
+                </ul>
+            </div>
+
+            <div class="col-md-4">
+              <img src="./img/lamparasal_buho.jpg" alt="">
+              <ul class="nav">
+                <li class="nav-item">
+                  <a class="nav-link" href="#"><i class="fa fa-star fa-2x" style="color: rgb(255, 0, 0);" aria-hidden="true"></i></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#"><i class="fa fa-star fa-2x" style="color: rgb(255, 0, 0);" aria-hidden="true"></i></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#"><i class="fa fa-star fa-2x" style="color: rgb(255, 0, 0);" aria-hidden="true"></i></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#"><i class="fa fa-star fa-2x" style="color: rgb(255, 0, 0);" aria-hidden="true"></i></a>
+                </li>
+              </ul>
+          </div>
+
+          <div class="col-md-4">
+            <img src="./img/lamparasal_panal.jpg" alt="">
+            <ul class="nav">
+              <li class="nav-item">
+                <a class="nav-link" href="#"><i class="fa fa-star fa-2x" style="color: rgb(255, 0, 0);" aria-hidden="true"></i></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"><i class="fa fa-star fa-2x" style="color: rgb(255, 0, 0);" aria-hidden="true"></i></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"><i class="fa fa-star fa-2x" style="color: rgb(255, 0, 0);" aria-hidden="true"></i></a>
+              </li>
+            </ul>
+        </div>
+        </div>
+    </div>
+
+    <!--Comienza la tienda-->
+    <div class="container" id="section">
+      <!--Filtrado de productos-->
+      <form class="row g-3">
+        <div class="col-auto">
+          <input type="text" class="form-control" placeholder="Buscar por nombre">
+        </div>
+        <div class="col-auto">
+          <input type="text" class="form-control" placeholder="Buscar precio">
+        </div>
+
+        <div class="col-auto">
+          <select class="form-select" aria-label="Default select example">
+            <option selected>Seleccione categoría</option>
+            <option value="1">Adornos</option>
+            <option value="2">Cartas</option>
+            <option value="3">Perfumes</option>
+          </select>
+        </div> 
+
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+          <label class="form-check-label" for="flexCheckDefault">
+           Ordenar desde A - Z.
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+          <label class="form-check-label" for="flexCheckDefault">
+           Ordenar desde Z - A.
+          </label>
+        </div>
+
+        <div class="col-auto">
+          <button type="submit" class="btn btn-primary mb-3">Buscar</button>
+        </div>
+      </form>
+      <h2><i class="fa fa-shopping-bag"></i> Ultimos productos</h2>
+      <hr>
+      <div class="row">
+        <div class="col-md-4" style="border: 1px solid rgb(226, 226, 226); border-radius: 5px 5px 5px 5px; padding: 1em">
+          <a href="detalles-producto.html">
+          <img src="./img/fuenteconbuda.jpg" class="card-img-top" alt="...">
+          </a>
+            <h5 class="tituloproducto" id="nombre_producto1"></h5>
+              <h3 id="precio_producto1"></h3>
+              <p id="desc_producto1"></p>
+              <a href="detalles-producto.html" class="btn btn-primary btnstore"><i class="fa fa-shopping-cart"></i> Añadir al carrito</a>
+              <a href="detalles-producto.html" class="btn btn-warning btnstore"><i class="fa fa-info-circle"></i> Detalles del producto</a>
+        </div>
+
+        <div class="col-md-4" style="border: 1px solid rgb(226, 226, 226); border-radius: 5px 5px 5px 5px; padding: 1em">
+          <a href="detalles-producto.html">
+          <img src="./img/fuentedeaguaredonda.jpg" class="card-img-top" alt="...">
+          </a>
+            <h5 class="tituloproducto" id="nombre_producto2"></h5>
+              <h3 id="precio_producto2"></h3>
+              <p id="desc_producto2"></p>
+              <a href="detalles-producto.html" class="btn btn-primary btnstore"><i class="fa fa-shopping-cart"></i> Añadir al carrito</a>
+              <a href="deatalles-producto.html" class="btn btn-warning btnstore"><i class="fa fa-info-circle"></i> Detalles del producto</a>
+        </div>
+
+        <div class="col-md-4" style="border: 1px solid rgb(226, 226, 226); border-radius: 5px 5px 5px 5px; padding: 1em">
+          <a href="detalles-producto.html">
+          <img src="./img/lamparasal_buho.jpg" class="card-img-top" alt="...">
+          </a> 
+            <h5 class="tituloproducto" id="nombre_producto3"></h5>
+              <h3 id="precio_producto3"></h3>
+              <p id="desc_producto3"></p>
+              <a href="detalles-producto.html" class="btn btn-primary btnstore"><i class="fa fa-shopping-cart"></i> Añadir al carrito</a>
+              <a href="detalles-producto.html" class="btn btn-warning btnstore"><i class="fa fa-info-circle"></i> Detalles del producto</a>
+        </div>
+
+        <div class="col-md-4" style="border: 1px solid rgb(226, 226, 226); border-radius: 5px 5px 5px 5px; padding: 1em">
+          <a href="detalles-producto.html">
+          <img src="./img/lamparasal_panal.jpg" class="card-img-top" alt="...">
+          </a>
+            <h5 class="tituloproducto" id="nombre_producto4"></h5>
+              <h3 id="precio_producto4"></h3>
+              <p id="desc_producto4"></p>
+              <a href="detalles-producto.html" class="btn btn-primary btnstore"><i class="fa fa-shopping-cart"></i> Añadir al carrito</a>
+              <a href="detalles-producto.html" class="btn btn-warning btnstore"><i class="fa fa-info-circle"></i> Detalles del producto</a>
+        </div>
+
+        <div class="col-md-4" style="border: 1px solid rgb(226, 226, 226); border-radius: 5px 5px 5px 5px; padding: 1em">
+          <a href="detlles-producto.html">
+          <img src="./img/oraculo_espiritus_animales.jpg" class="card-img-top" alt="...">
+          </a>
+            <h5 class="tituloproducto" id="nombre_producto5"></h5>
+              <h3 id="precio_producto5"></h3>
+              <p id="desc_producto5"></p>
+              <a href="detalles-producto.html" class="btn btn-primary btnstore"><i class="fa fa-shopping-cart"></i> Añadir al carrito</a>
+              <a href="detalles-producto.html" class="btn btn-warning btnstore"><i class="fa fa-info-circle"></i> Detalles del producto</a>
+        </div>
+
+        <div class="col-md-4" style="border: 1px solid rgb(226, 226, 226); border-radius: 5px 5px 5px 5px; padding: 1em">
+          <a href="detalles-producto.html">
+          <img src="./img/oraculo_reiki.jpg" class="card-img-top" alt="...">
+          </a>
+            <h5 class="tituloproducto" id="nombre_producto6"></h5>
+              <h3 id="precio_producto6"></h3>
+              <p id="desc_producto6"></p>
+              <a href="detalles-producto.html" class="btn btn-primary btnstore"><i class="fa fa-shopping-cart"></i> Añadir al carrito</a>
+              <a href="detalles-producto.html" class="btn btn-warning btnstore"><i class="fa fa-info-circle"></i> Detalles del producto</a>
+        </div>
+
+      </div>
     </div>
 
 
-    <div class="wrap">
-        <div class="text">Escoge un producto para tu bienestar</div>
-            <div class="store-wrapper">
-                <div class="category_list">
-                    <a href="#" class="category_item" category="all">Todos</a>
+
+    <!--Aqui comienza el footer-->
+    <div class="container-fluid text-center" id="footer">
+        <div class="row">
+            <div class="col-md-12">
+              <p>Cat <a href="index.html">OM</a> - 2021 - Todos los derechos reservados</p>
+            </div>
+        </div>
+    </div>
+    
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+</html>
                     <a href="#" class="category_item" category="all">A - Z</a>
                     <a href="#" class="category_item" category="all">Z - A</a>
                     <a href="#" class="category_item" category="all">Destacados</a>
