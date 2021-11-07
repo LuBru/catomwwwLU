@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="icon" type="image/png" href="img/catwhitefavicon.png" />
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/estilos.css">
+    <link rel="stylesheet" href="./css/font-awesome.min.css">
+    <title>CAT OM</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">CAT ON</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Productos
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Lista de productos</a></li>
+                  <li><a class="dropdown-item" href="#">Nuevo producto</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="index.html" target="new_black"><i class="fa fa-eye" aria-hidden="true"></i> Visitar el sitio</a>
+              </li>
+            </ul>
+            <form class="d-flex">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Buscar</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+
+
+  <!--Productos para editar-->
+  <div class="container" id="section">
+    <div class="row">
+      <div class="col-md-12">
+        <table class="table">
+          <thead>
+            <tr>
+              <th scope="col">ID</th>
+              <th scope="col">Nombre</th>
+              <th scope="col">Precio</th>
+              <th scope="col">Descriptción</th>
+              <th scope="col">Categoría</th>
+              <th scope="col">Imagen</th>
+              <th scope="col">Acciones</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">1</th>
+              <td>Lampara de Sal</td>
+              <td><div class="badge bg-secondary">Regalos</div></td>
+              <td><strong>$150</strong></td>
+              <td>Lorem ipsum dolor sit amet consectetur adipisicing elit.</td>
+              <td><img src="./img/fuenteconbuda.jpg" alt="..." width="90px"></td>
+              <td>
+                <a href="#" class="btn btn-primary fa fa-eye"></a>
+                <a href="#" class="btn btn-success fa fa-edit"></a>
+                <a href="#" class="btn btn-danger fa fa-trash"></a>
+              </td>
+            </tr>
+            <tr>
+              <th scope="row">3</th>
+              <td>Lampara Buho</td>
+              <td><div class="badge bg-success">Accesorios</div></td>
+              <td><strong>$330</strong></td>
+              <td>Lorem ipsum dolor sit amet consectetur adipisicing elit.</td>
+              <td><img src="./img/lamparasal_buho.jpg" alt="..." width="90px"></td>
+              <td>
+                <a href="#" class="btn btn-primary fa fa-eye"></a>
+                <a href="#" class="btn btn-success fa fa-edit"></a>
+                <a href="#" class="btn btn-danger fa fa-trash"></a>
+              </td>
+            </tr>
+            <tr>
+              <th scope="row">4</th>
+              <td>Cartas</td>
+              <td><div class="badge bg-primary">Cartas</div></td>
+              <td><strong>$330</strong></td>
+              <td>Lorem ipsum dolor sit amet consectetur adipisicing elit.</td>
+              <td><img src="./img/oraculo_espiritus_animales.jpg" alt="..." width="90px"></td>
+              <td>
+                <a href="#" class="btn btn-primary fa fa-eye"></a>
+                <a href="#" class="btn btn-success fa fa-edit"></a>
+                <a href="#" class="btn btn-danger fa fa-trash"></a>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+      <script src="./js/bootstrap.min.js"></script>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+</html>
